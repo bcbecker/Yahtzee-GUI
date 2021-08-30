@@ -1,6 +1,6 @@
-package finalproject;
+package yahtzee;
 
-import finalproject.Roll.scoreType;
+import yahtzee.Roll.scoreType;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;

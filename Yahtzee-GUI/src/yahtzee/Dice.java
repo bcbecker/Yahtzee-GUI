@@ -1,4 +1,4 @@
-package finalproject;
+package yahtzee;
 
 import java.util.Random;
 

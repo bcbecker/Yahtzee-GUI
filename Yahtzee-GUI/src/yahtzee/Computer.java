@@ -1,4 +1,4 @@
-package finalproject;
+package yahtzee;
 
 /**
  *
@@ -11,7 +11,6 @@ public class Computer extends Player {
         super("Computer");
     }
     
-    // didn't have time to finish
     // methods to determine which dice to score, if roll again, and which dice to roll again
     
 }

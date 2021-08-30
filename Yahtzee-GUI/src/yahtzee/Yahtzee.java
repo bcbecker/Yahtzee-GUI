@@ -1,4 +1,4 @@
-package finalproject;
+package yahtzee;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -10,7 +10,7 @@ import javafx.stage.Stage;
  *
  * @author becker.bryce
  */
-public class FinalProject extends Application {
+public class Yahtzee extends Application {
     
     @Override
     public void start(Stage stage) throws Exception {

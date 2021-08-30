@@ -1,4 +1,4 @@
-package finalproject;
+package yahtzee;
 
 import java.util.ArrayList;
 import java.util.Random;
@@ -68,7 +68,7 @@ public class Roll {
             }
             rollCounter++;
         }
-        //do we want to throw an exception here? (throw new IllegalArgumentException("Invalid button press.");)
+        throw new IllegalArgumentException("Invalid button press.");
     }
     
 }
