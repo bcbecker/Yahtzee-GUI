@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="finalproject.FXMLDocumentController">
+    <children>
+      <Label fx:id="titleText" layoutX="236.0" layoutY="8.0" text="Yahtzee">
+         <font>
+            <Font name="Corbel Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label fx:id="infoText" alignment="CENTER" layoutX="35.0" layoutY="99.0" text="Select single player to play against the computer, or multiplayer to play against a friend.">
+         <font>
+            <Font name="Corbel Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="winLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="210.0" layoutY="100.0" prefHeight="42.0" prefWidth="180.0" text="  ">
+         <font>
+            <Font name="Corbel Bold" size="18.0" />
+         </font>
+      </Label>
+        <Button fx:id="singlePlayerButtonClick" alignment="CENTER" contentDisplay="CENTER" layoutX="228.0" layoutY="159.0" onAction="#singlePlayerButtonAction" prefHeight="41.0" prefWidth="145.0" text="Single Player">
+         <font>
+            <Font name="Corbel" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="multiplayerButtonClick" alignment="CENTER" layoutX="228.0" layoutY="231.0" onAction="#multiplayerButtonAction" prefHeight="41.0" prefWidth="145.0" text="Multiplayer">
+         <font>
+            <Font name="Corbel" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="quitButtonClick" alignment="CENTER" layoutX="228.0" layoutY="303.0" onAction="#quitButtonAction" prefHeight="41.0" prefWidth="145.0" text="Quit">
+         <font>
+            <Font name="Corbel" size="18.0" />
+         </font>
+      </Button>
+      <AnchorPane fx:id="player1scoreCard" prefHeight="400.0" prefWidth="200.0">
+         <children>
+            <Label fx:id="player1ones" layoutX="10.0" layoutY="30.0" text="ONES">
+               <font>
+                  <Font name="Corbel Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="player1twos" layoutX="10.0" layoutY="55.0" text="TWOS">
+               <font>
+                  <Font name="Corbel Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="player1threes" layoutX="10.0" layoutY="80.0" text="THREES">
+               <font>
+                  <Font name="Corbel Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="player1fours" layoutX="10.0" layoutY="105.0" text="FOURS">
+               <font>
+                  <Font name="Corbel Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="player1fives" layoutX="10.0" layoutY="130.0" text="FIVES">
+               <font>
+                  <Font name="Corbel Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="player1sixes" layoutX="10.0" layoutY="155.0" text="SIXES">
+               <font>
+                  <Font name="Corbel Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="player1threeofakind" layoutX="10.0" layoutY="180.0" text="THREE OF A KIND">
+               <font>
+                  <Font name="Corbel Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="player1fourofakind" layoutX="10.0" layoutY="205.0" text="FOUR OF A KIND">
+               <font>
+                  <Font name="Corbel Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="player1fullhouse" layoutX="10.0" layoutY="230.0" text="FULL HOUSE">
+               <font>
+                  <Font name="Corbel Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="player1smallstraight" layoutX="10.0" layoutY="255.0" text="SMALL STRAIGHT">
+               <font>
+                  <Font name="Corbel Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="player1largestraight" layoutX="10.0" layoutY="280.0" text="LARGE STRAIGHT">
+               <font>
+                  <Font name="Corbel Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="player1chance" layoutX="10.0" layoutY="305.0" text="CHANCE">
+               <font>
+                  <Font name="Corbel Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="player1yahtzee" layoutX="10.0" layoutY="330.0" text="YAHTZEE">
+               <font>
+                  <Font name="Corbel Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="player1Title" layoutX="59.0" text="Player 1">
+               <font>
+                  <Font name="Corbel Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="player1total" layoutX="26.0" layoutY="364.0" text="TOTAL:">
+               <font>
+                  <Font name="Corbel Bold" size="18.0" />
+               </font>
+            </Label>
+            <Separator fx:id="player1grid3" layoutY="27.0" prefHeight="0.0" prefWidth="200.0" />
+            <Separator fx:id="player1grid1" orientation="VERTICAL" prefHeight="400.0" />
+            <Separator fx:id="player1grid17" layoutX="130.0" layoutY="27.0" orientation="VERTICAL" prefHeight="373.0" />
+            <Separator fx:id="player1grid2" layoutX="197.0" orientation="VERTICAL" prefHeight="400.0" />
+            <Separator fx:id="player1grid4" layoutX="-1.0" layoutY="50.0" prefHeight="0.0" prefWidth="200.0" />
+            <Separator fx:id="player1grid5" layoutX="-1.0" layoutY="75.0" prefHeight="0.0" prefWidth="200.0" />
+            <Separator fx:id="player1grid9" layoutX="-2.0" layoutY="175.0" prefHeight="0.0" prefWidth="200.0" />
+            <Separator fx:id="player1grid8" layoutX="-1.0" layoutY="150.0" prefHeight="0.0" prefWidth="200.0" />
+            <Separator fx:id="player1grid6" layoutX="-1.0" layoutY="100.0" prefHeight="0.0" prefWidth="200.0" />
+            <Separator fx:id="player1grid7" layoutX="-1.0" layoutY="125.0" prefHeight="0.0" prefWidth="200.0" />
+            <Separator fx:id="player1grid10" layoutX="-1.0" layoutY="200.0" prefHeight="0.0" prefWidth="200.0" />
+            <Separator fx:id="player1grid11" layoutX="-1.0" layoutY="225.0" prefHeight="0.0" prefWidth="200.0" />
+            <Separator fx:id="player1grid12" layoutX="-1.0" layoutY="250.0" prefHeight="0.0" prefWidth="200.0" />
+            <Separator fx:id="player1grid13" layoutX="-1.0" layoutY="275.0" prefHeight="0.0" prefWidth="200.0" />
+            <Separator fx:id="player1grid15" layoutX="-1.0" layoutY="325.0" prefHeight="3.0" prefWidth="200.0" />
+            <Separator fx:id="player1grid14" layoutX="-1.0" layoutY="300.0" prefHeight="3.0" prefWidth="200.0" />
+            <Separator fx:id="player1grid16" layoutY="350.0" prefHeight="3.0" prefWidth="200.0" />
+            <Label fx:id="player1scoreONESLabel" layoutX="144.0" layoutY="28.0" prefHeight="22.0" prefWidth="40.0" />
+            <Button fx:id="player1scoreONES" alignment="CENTER" layoutX="142.0" layoutY="28.0" onAction="#player1scoreONESButton" prefHeight="22.0" prefWidth="45.0" text="Score">
+               <font>
+                  <Font name="Corbel" size="12.0" />
+               </font>
+            </Button>
+            <Label fx:id="player1scoreTWOSLabel" layoutX="144.0" layoutY="53.0" prefHeight="22.0" prefWidth="40.0" />
+            <Button fx:id="player1scoreTWOS" alignment="CENTER" layoutX="142.0" layoutY="52.0" onAction="#player1scoreTWOSButton" prefHeight="22.0" prefWidth="45.0" text="Score">
+               <font>
+                  <Font name="Corbel" size="12.0" />
+               </font>
+            </Button>
+            <Label fx:id="player1scoreTHREESLabel" layoutX="144.0" layoutY="78.0" prefHeight="22.0" prefWidth="40.0" />
+            <Button fx:id="player1scoreTHREES" alignment="CENTER" layoutX="142.0" layoutY="77.0" onAction="#player1scoreTHREESButton" prefHeight="22.0" prefWidth="45.0" text="Score">
+               <font>
+                  <Font name="Corbel" size="12.0" />
+               </font>
+            </Button>
+            <Label fx:id="player1scoreFOURSLabel" layoutX="145.0" layoutY="103.0" prefHeight="22.0" prefWidth="40.0" />
+            <Button fx:id="player1scoreFOURS" alignment="CENTER" layoutX="142.0" layoutY="102.0" onAction="#player1scoreFOURSButton" prefHeight="22.0" prefWidth="45.0" text="Score">
+               <font>
+                  <Font name="Corbel" size="12.0" />
+               </font>
+            </Button>
+            <Label fx:id="player1scoreFIVESLabel" layoutX="144.0" layoutY="128.0" prefHeight="22.0" prefWidth="40.0" />
+            <Button fx:id="player1scoreFIVES" alignment="CENTER" layoutX="142.0" layoutY="127.0" onAction="#player1scoreFIVESButton" prefHeight="22.0" prefWidth="45.0" text="Score">
+               <font>
+                  <Font name="Corbel" size="12.0" />
+               </font>
+            </Button>
+            <Label fx:id="player1scoreSIXESLabel" layoutX="144.0" layoutY="152.0" prefHeight="22.0" prefWidth="40.0" />
+            <Button fx:id="player1scoreSIXES" alignment="CENTER" layoutX="142.0" layoutY="152.0" onAction="#player1scoreSIXESButton" prefHeight="22.0" prefWidth="45.0" text="Score">
+               <font>
+                  <Font name="Corbel" size="12.0" />
+               </font>
+            </Button>
+            <Label fx:id="player1scoreTHREEOFAKINDLabel" layoutX="144.0" layoutY="178.0" prefHeight="22.0" prefWidth="40.0" />
+            <Button fx:id="player1scoreTHREEOFAKIND" alignment="CENTER" layoutX="142.0" layoutY="177.0" onAction="#player1scoreTHREEOFAKINDButton" prefHeight="22.0" prefWidth="45.0" text="Score">
+               <font>
+                  <Font name="Corbel" size="12.0" />
+               </font>
+            </Button>
+            <Label fx:id="player1scoreFOUROFAKINDLabel" layoutX="144.0" layoutY="203.0" prefHeight="22.0" prefWidth="40.0" />
+            <Button fx:id="player1scoreFOUROFAKIND" alignment="CENTER" layoutX="142.0" layoutY="202.0" onAction="#player1scoreFOUROFAKINDButton" prefHeight="22.0" prefWidth="45.0" text="Score">
+               <font>
+                  <Font name="Corbel" size="12.0" />
+               </font>
+            </Button>
+            <Label fx:id="player1scoreFULLHOUSELabel" layoutX="144.0" layoutY="226.0" prefHeight="22.0" prefWidth="40.0" />
+            <Button fx:id="player1scoreFULLHOUSE" alignment="CENTER" layoutX="142.0" layoutY="226.0" onAction="#player1scoreFULLHOUSEButton" prefHeight="22.0" prefWidth="45.0" text="Score">
+               <font>
+                  <Font name="Corbel" size="12.0" />
+               </font>
+            </Button>
+            <Label fx:id="player1scoreSMALLSTRAIGHTLabel" layoutX="144.0" layoutY="253.0" prefHeight="22.0" prefWidth="40.0" />
+            <Button fx:id="player1scoreSMALLSTRAIGHT" alignment="CENTER" layoutX="142.0" layoutY="252.0" onAction="#player1scoreSMALLSTRAIGHTButton" prefHeight="22.0" prefWidth="45.0" text="Score">
+               <font>
+                  <Font name="Corbel" size="12.0" />
+               </font>
+            </Button>
+            <Label fx:id="player1scoreLARGESTRAIGHTLabel" layoutX="144.0" layoutY="277.0" prefHeight="22.0" prefWidth="40.0" />
+            <Button fx:id="player1scoreLARGESTRAIGHT" alignment="CENTER" layoutX="142.0" layoutY="277.0" onAction="#player1scoreLARGESTRAIGHTButton" prefHeight="22.0" prefWidth="45.0" text="Score">
+               <font>
+                  <Font name="Corbel" size="12.0" />
+               </font>
+            </Button>
+            <Label fx:id="player1scoreCHANCELabel" layoutX="144.0" layoutY="302.0" prefHeight="22.0" prefWidth="40.0" />
+            <Button fx:id="player1scoreCHANCE" alignment="CENTER" layoutX="142.0" layoutY="302.0" onAction="#player1scoreCHANCEButton" prefHeight="22.0" prefWidth="45.0" text="Score">
+               <font>
+                  <Font name="Corbel" size="12.0" />
+               </font>
+            </Button>
+            <Label fx:id="player1scoreYAHTZEELabel" layoutX="144.0" layoutY="327.0" prefHeight="22.0" prefWidth="40.0" />
+            <Button fx:id="player1scoreYAHTZEE" alignment="CENTER" layoutX="142.0" layoutY="327.0" onAction="#player1scoreYAHTZEEButton" prefHeight="22.0" prefWidth="45.0" text="Score">
+               <font>
+                  <Font name="Corbel" size="12.0" />
+               </font>
+            </Button>
+            <Label fx:id="player1TotalScoreLabel" layoutX="138.0" layoutY="355.0" prefHeight="42.0" prefWidth="54.0">
+               <font>
+                  <Font name="Corbel" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="otherPlayerScoreCard" layoutX="387.0" prefHeight="400.0" prefWidth="200.0">
+         <children>
+            <Label fx:id="otherPlayerTitle" layoutX="69.0" layoutY="-1.0" text="Player 2">
+               <font>
+                  <Font name="Corbel Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="otherPlayerones" layoutX="20.0" layoutY="30.0" text="ONES">
+               <font>
+                  <Font name="Corbel Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="otherPlayertwos" layoutX="20.0" layoutY="54.0" text="TWOS">
+               <font>
+                  <Font name="Corbel Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="otherPlayerthrees" layoutX="20.0" layoutY="79.0" text="THREES">
+               <font>
+                  <Font name="Corbel Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="otherPlayerfours" layoutX="20.0" layoutY="104.0" text="FOURS">
+               <font>
+                  <Font name="Corbel Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="otherPlayerfives" layoutX="20.0" layoutY="129.0" text="FIVES">
+               <font>
+                  <Font name="Corbel Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="otherPlayersixes" layoutX="20.0" layoutY="154.0" text="SIXES">
+               <font>
+                  <Font name="Corbel Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="otherPlayerthreeofakind" layoutX="20.0" layoutY="179.0" text="THREE OF A KIND">
+               <font>
+                  <Font name="Corbel Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="otherPlayerfourofakind" layoutX="20.0" layoutY="204.0" text="FOUR OF A KIND">
+               <font>
+                  <Font name="Corbel Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="otherPlayerfullhouse" layoutX="20.0" layoutY="229.0" text="FULL HOUSE">
+               <font>
+                  <Font name="Corbel Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="otherPlayersmallstraight" layoutX="20.0" layoutY="254.0" text="SMALL STRAIGHT">
+               <font>
+                  <Font name="Corbel Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="otherPlayerlargestraight" layoutX="20.0" layoutY="279.0" text="LARGE STRAIGHT">
+               <font>
+                  <Font name="Corbel Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="otherPlayerchance" layoutX="20.0" layoutY="304.0" text="CHANCE">
+               <font>
+                  <Font name="Corbel Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="otherPlayeryahtzee" layoutX="20.0" layoutY="329.0" text="YAHTZEE">
+               <font>
+                  <Font name="Corbel Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="otherPlayertotal" layoutX="36.0" layoutY="363.0" text="TOTAL:">
+               <font>
+                  <Font name="Corbel Bold" size="18.0" />
+               </font>
+            </Label>
+            <Separator fx:id="otherPlayergrid3" layoutX="11.0" layoutY="26.0" prefHeight="0.0" prefWidth="198.0" />
+            <Separator fx:id="otherPlayergrid1" layoutX="11.0" orientation="VERTICAL" prefHeight="400.0" />
+            <Separator fx:id="otherPlayergrid17" layoutX="142.0" layoutY="26.0" orientation="VERTICAL" prefHeight="375.0" />
+            <Separator fx:id="otherPlayergrid2" layoutX="207.0" orientation="VERTICAL" prefHeight="400.0" />
+            <Separator fx:id="otherPlayergrid4" layoutX="12.0" layoutY="49.0" prefHeight="0.0" prefWidth="198.0" />
+            <Separator fx:id="otherPlayergrid5" layoutX="12.0" layoutY="74.0" prefHeight="0.0" prefWidth="198.0" />
+            <Separator fx:id="otherPlayergrid9" layoutX="12.0" layoutY="174.0" prefHeight="0.0" prefWidth="198.0" />
+            <Separator fx:id="otherPlayergrid8" layoutX="12.0" layoutY="149.0" prefHeight="0.0" prefWidth="198.0" />
+            <Separator fx:id="otherPlayergrid6" layoutX="12.0" layoutY="99.0" prefHeight="0.0" prefWidth="198.0" />
+            <Separator fx:id="otherPlayergrid7" layoutX="12.0" layoutY="124.0" prefHeight="0.0" prefWidth="198.0" />
+            <Separator fx:id="otherPlayergrid10" layoutX="12.0" layoutY="199.0" prefHeight="0.0" prefWidth="198.0" />
+            <Separator fx:id="otherPlayergrid11" layoutX="12.0" layoutY="224.0" prefHeight="0.0" prefWidth="198.0" />
+            <Separator fx:id="otherPlayergrid12" layoutX="12.0" layoutY="249.0" prefHeight="0.0" prefWidth="198.0" />
+            <Separator fx:id="otherPlayergrid13" layoutX="12.0" layoutY="274.0" prefHeight="0.0" prefWidth="198.0" />
+            <Separator fx:id="otherPlayergrid15" layoutX="12.0" layoutY="324.0" prefHeight="3.0" prefWidth="198.0" />
+            <Separator fx:id="otherPlayergrid14" layoutX="13.0" layoutY="299.0" prefHeight="3.0" prefWidth="197.0" />
+            <Separator fx:id="otherPlayergrid16" layoutX="11.0" layoutY="349.0" prefHeight="3.0" prefWidth="199.0" />
+            <Label fx:id="otherplayerscoreONESLabel" layoutX="156.0" layoutY="28.0" prefHeight="22.0" prefWidth="40.0" />
+            <Button fx:id="otherplayerscoreONES" alignment="CENTER" layoutX="154.0" layoutY="27.0" onAction="#otherplayerscoreONESButton" prefHeight="22.0" prefWidth="45.0" text="Score">
+               <font>
+                  <Font name="Corbel" size="12.0" />
+               </font>
+            </Button>
+            <Label fx:id="otherplayerscoreTWOSLabel" layoutX="156.0" layoutY="52.0" prefHeight="22.0" prefWidth="40.0" />
+            <Button fx:id="otherplayerscoreTWOS" alignment="CENTER" layoutX="154.0" layoutY="51.0" onAction="#otherplayerscoreTWOSButton" prefHeight="22.0" prefWidth="45.0" text="Score">
+               <font>
+                  <Font name="Corbel" size="12.0" />
+               </font>
+            </Button>
+            <Label fx:id="otherplayerscoreTHREESLabel" layoutX="156.0" layoutY="76.0" prefHeight="22.0" prefWidth="40.0" />
+            <Button fx:id="otherplayerscoreTHREES" alignment="CENTER" layoutX="154.0" layoutY="76.0" onAction="#otherplayerscoreTHREESButton" prefHeight="22.0" prefWidth="45.0" text="Score">
+               <font>
+                  <Font name="Corbel" size="12.0" />
+               </font>
+            </Button>
+            <Label fx:id="otherplayerscoreFOURSLabel" layoutX="156.0" layoutY="101.0" prefHeight="22.0" prefWidth="40.0" />
+            <Button fx:id="otherplayerscoreFOURS" alignment="CENTER" layoutX="154.0" layoutY="101.0" onAction="#otherplayerscoreFOURSButton" prefHeight="22.0" prefWidth="45.0" text="Score">
+               <font>
+                  <Font name="Corbel" size="12.0" />
+               </font>
+            </Button>
+            <Label fx:id="otherplayerscoreFIVESLabel" layoutX="156.0" layoutY="127.0" prefHeight="22.0" prefWidth="40.0" />
+            <Button fx:id="otherplayerscoreFIVES" alignment="CENTER" layoutX="154.0" layoutY="126.0" onAction="#otherplayerscoreFIVESButton" prefHeight="22.0" prefWidth="45.0" text="Score">
+               <font>
+                  <Font name="Corbel" size="12.0" />
+               </font>
+            </Button>
+            <Label fx:id="otherplayerscoreSIXESLabel" layoutX="156.0" layoutY="152.0" prefHeight="22.0" prefWidth="40.0" />
+            <Button fx:id="otherplayerscoreSIXES" alignment="CENTER" layoutX="154.0" layoutY="151.0" onAction="#otherplayerscoreSIXESButton" prefHeight="22.0" prefWidth="45.0" text="Score">
+               <font>
+                  <Font name="Corbel" size="12.0" />
+               </font>
+            </Button>
+            <Label fx:id="otherplayerscoreTHREEOFAKINDLabel" layoutX="156.0" layoutY="177.0" prefHeight="22.0" prefWidth="40.0" />
+            <Button fx:id="otherplayerscoreTHREEOFAKIND" alignment="CENTER" layoutX="154.0" layoutY="176.0" onAction="#otherplayerscoreTHREEOFAKINDButton" prefHeight="22.0" prefWidth="45.0" text="Score">
+               <font>
+                  <Font name="Corbel" size="12.0" />
+               </font>
+            </Button>
+            <Label fx:id="otherplayerscoreFOUROFAKINDLabel" layoutX="156.0" layoutY="201.0" prefHeight="22.0" prefWidth="40.0" />
+            <Button fx:id="otherplayerscoreFOUROFAKIND" alignment="CENTER" layoutX="154.0" layoutY="201.0" onAction="#otherplayerscoreFOUROFAKINDButton" prefHeight="22.0" prefWidth="45.0" text="Score">
+               <font>
+                  <Font name="Corbel" size="12.0" />
+               </font>
+            </Button>
+            <Label fx:id="otherplayerscoreFULLHOUSELabel" layoutX="156.0" layoutY="227.0" prefHeight="22.0" prefWidth="40.0" />
+            <Button fx:id="otherplayerscoreFULLHOUSE" alignment="CENTER" layoutX="154.0" layoutY="225.0" onAction="#otherplayerscoreFULLHOUSEButton" prefHeight="22.0" prefWidth="45.0" text="Score">
+               <font>
+                  <Font name="Corbel" size="12.0" />
+               </font>
+            </Button>
+            <Label fx:id="otherplayerscoreSMALLSTRAIGHTLabel" layoutX="156.0" layoutY="252.0" prefHeight="22.0" prefWidth="40.0" />
+            <Button fx:id="otherplayerscoreSMALLSTRAIGHT" alignment="CENTER" layoutX="154.0" layoutY="251.0" onAction="#otherplayerscoreSMALLSTRAIGHTButton" prefHeight="22.0" prefWidth="45.0" text="Score">
+               <font>
+                  <Font name="Corbel" size="12.0" />
+               </font>
+            </Button>
+            <Label fx:id="otherplayerscoreLARGESTRAIGHTLabel" layoutX="156.0" layoutY="277.0" prefHeight="22.0" prefWidth="40.0" />
+            <Button fx:id="otherplayerscoreLARGESTRAIGHT" alignment="CENTER" layoutX="154.0" layoutY="276.0" onAction="#otherplayerscoreLARGESTRAIGHTButton" prefHeight="22.0" prefWidth="45.0" text="Score">
+               <font>
+                  <Font name="Corbel" size="12.0" />
+               </font>
+            </Button>
+            <Label fx:id="otherplayerscoreCHANCELabel" layoutX="157.0" layoutY="301.0" prefHeight="22.0" prefWidth="40.0" />
+            <Button fx:id="otherplayerscoreCHANCE" alignment="CENTER" layoutX="154.0" layoutY="301.0" onAction="#otherplayerscoreCHANCEButton" prefHeight="22.0" prefWidth="45.0" text="Score">
+               <font>
+                  <Font name="Corbel" size="12.0" />
+               </font>
+            </Button>
+            <Label fx:id="otherplayerscoreYAHTZEELabel" layoutX="156.0" layoutY="326.0" prefHeight="22.0" prefWidth="40.0" />
+            <Button fx:id="otherplayerscoreYAHTZEE" alignment="CENTER" layoutX="154.0" layoutY="326.0" onAction="#otherplayerscoreYAHTZEEButton" prefHeight="22.0" prefWidth="45.0" text="Score">
+               <font>
+                  <Font name="Corbel" size="12.0" />
+               </font>
+            </Button>
+            <Label fx:id="otherplayerTotalScoreLabel" layoutX="149.0" layoutY="354.0" prefHeight="42.0" prefWidth="54.0">
+               <font>
+                  <Font name="Corbel" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="otherplayerRollAnchor" layoutX="292.0" layoutY="353.0" prefHeight="42.0" prefWidth="105.0">
+         <children>
+            <Button fx:id="otherplayerRollButton" alignment="CENTER" layoutX="24.0" layoutY="6.0" onAction="#otherplayerRollClick" prefHeight="28.0" prefWidth="74.0" text="Roll">
+               <font>
+                  <Font name="Corbel" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="otherplayerRerollButton" alignment="CENTER" layoutX="24.0" layoutY="5.0" onAction="#otherplayerRerollClick" prefHeight="28.0" prefWidth="74.0" text="Reroll">
+               <font>
+                  <Font name="Corbel" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="player1RollAnchor" layoutX="203.0" layoutY="355.0" prefHeight="42.0" prefWidth="105.0">
+         <children>
+            <Button fx:id="player1RollButton" alignment="CENTER" layoutX="5.0" layoutY="4.0" onAction="#player1RollClick" prefHeight="28.0" prefWidth="74.0" text="Roll">
+               <font>
+                  <Font name="Corbel" size="18.0" />
+               </font>
+            </Button>
+            <Button fx:id="player1RerollButton" alignment="CENTER" layoutX="5.0" layoutY="4.0" onAction="#player1RerollClick" prefHeight="28.0" prefWidth="74.0" text="Reroll">
+               <font>
+                  <Font name="Corbel" size="18.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Button fx:id="die1" alignment="CENTER" contentDisplay="CENTER" layoutX="320.0" layoutY="58.0" onAction="#die1Click" prefHeight="50.0" prefWidth="50.0">
+         <font>
+            <Font name="Corbel" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="die2" alignment="CENTER" contentDisplay="CENTER" layoutX="231.0" layoutY="108.0" onAction="#die2Click" prefHeight="50.0" prefWidth="50.0">
+         <font>
+            <Font name="Corbel" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="die3" alignment="CENTER" contentDisplay="CENTER" layoutX="320.0" layoutY="159.0" onAction="#die3Click" prefHeight="50.0" prefWidth="50.0">
+         <font>
+            <Font name="Corbel" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="die4" alignment="CENTER" contentDisplay="CENTER" layoutX="231.0" layoutY="206.0" onAction="#die4Click" prefHeight="50.0" prefWidth="50.0">
+         <font>
+            <Font name="Corbel" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="die5" alignment="CENTER" contentDisplay="CENTER" layoutX="320.0" layoutY="253.0" onAction="#die5Click" prefHeight="50.0" prefWidth="50.0">
+         <font>
+            <Font name="Corbel" size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="die6" alignment="CENTER" contentDisplay="CENTER" layoutX="231.0" layoutY="299.0" onAction="#die6Click" prefHeight="50.0" prefWidth="50.0">
+         <font>
+            <Font name="Corbel" size="18.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>
